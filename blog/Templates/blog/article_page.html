@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Article Page</title>
+</head>
+<body>
+	<h1>{{ article.title }}</h1>
+	<br>
+	<h4>{{ article.content }}</h4>
+	<br><br>
+	<a href="{% url 'blog:edit_page' article.id%}">modify</a>
+</body>
+</html>
